@@ -23,7 +23,7 @@ struct ContentView: View {
                 TextField("Tip Percentage", value: $tipPercentage, formatter: NumberFormatter())
                 Stepper("Tip Percentage", value: $tipPercentage)
             }
-            Text("\(tipAmount)")
+            Text("Tip Amount: \(tipAmount)")
             Button("Calculate Tip") {
                 
             }

@@ -25,9 +25,14 @@ struct ContentView: View {
             }
             Text("Tip Amount: \(tipAmount)")
             Button("Calculate Tip") {
-                
+                calculateTip()
             }
         }
+    }
+    
+    func calculateTip() {
+        let percentage = Double(tipPercentage) / 100.0
+        tipAmount = billAmount * percentage
     }
 }
 

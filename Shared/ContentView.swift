@@ -31,7 +31,12 @@ struct ContentView: View {
                 // Increment or decrement by 5 percent.
                 Stepper("Tip Percentage", value: $tipPercentage, in: tipRange, step: 5)
             }
-            Text("Tip Amount: \(tipAmount)")
+            HStack {
+                Text("Tip Amount:")
+                TextField("Tip Amount", value: $tipAmount, formatter: currencyFormatter)
+                    .disabled(true)
+            }
+            
             Button("Calculate Tip") {
                 calculateTip()
             }

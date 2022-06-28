@@ -41,10 +41,10 @@ struct ContentView: View {
                 calculateTip()
             }
         }
-        .onChange(of: billAmount) { newValue in
+        .onChange(of: billAmount) { _ in
             calculateTip()
         }
-        .onChange(of: tipPercentage) { newValue in
+        .onChange(of: tipPercentage) { _ in
             calculateTip()
         }
     }

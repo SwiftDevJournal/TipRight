@@ -15,9 +15,11 @@ struct ContentView: View {
     var body: some View {
         VStack {
             HStack {
+                Text("Bill Amount:")
                 TextField("Bill Amount", value: $billAmount, formatter: NumberFormatter())
             }
             HStack {
+                Text("Tip Percentage:")
                 TextField("Tip Percentage", value: $tipPercentage, formatter: NumberFormatter())
                 Stepper("Tip Percentage", value: $tipPercentage)
             }

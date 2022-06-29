@@ -21,20 +21,27 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            Spacer()
             HStack {
+                Spacer()
                 Text("Bill Amount:")
                 TextField("Bill Amount", value: $billAmount, formatter: currencyFormatter)
+                Spacer()
             }
             HStack {
+                Spacer()
                 Text("Tip Percentage:")
                 TextField("Tip Percentage", value: $tipPercentage, formatter: NumberFormatter())
                 // Increment or decrement by 5 percent.
                 Stepper("", value: $tipPercentage, in: tipRange, step: 5)
+                Spacer()
             }
             HStack {
+                Spacer()
                 Text("Tip Amount:")
                 TextField("Tip Amount", value: $tipAmount, formatter: currencyFormatter)
                     .disabled(true)
+                Spacer()
             }
             
             Button("Calculate Tip") {

@@ -22,16 +22,20 @@ struct ContentView: View {
     var body: some View {
         VStack {
             HStack {
+                Spacer()
                 Text("Bill Amount:")
                 TextField("Bill Amount", value: $billAmount, formatter: currencyFormatter)
                     .keyboardType(.numberPad)
+                Spacer()
             }
             HStack {
+                Spacer()
                 Text("Tip Percentage:")
                 TextField("Tip Percentage", value: $tipPercentage, formatter: NumberFormatter())
                     .keyboardType(.decimalPad)
                 // Increment or decrement by 5 percent.
                 Stepper("", value: $tipPercentage, in: tipRange, step: 5)
+                Spacer()
             }
             Text("Tip Amount: \(tipAmount)")
             Button("Calculate Tip") {

@@ -41,6 +41,7 @@ struct ContentView: View {
             Button("Calculate Tip") {
                 calculateTip()
             }
+            .buttonStyle(.borderedProminent)
         }
         .onChange(of: billAmount) { _ in
             calculateTip()

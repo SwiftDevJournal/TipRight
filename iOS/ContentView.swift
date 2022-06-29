@@ -37,7 +37,13 @@ struct ContentView: View {
                 Stepper("", value: $tipPercentage, in: tipRange, step: 5)
                 Spacer()
             }
-            Text("Tip Amount: \(tipAmount)")
+            HStack {
+                Spacer()
+                Text("Tip Amount:")
+                TextField("Tip Amount", value: $tipAmount, formatter: currencyFormatter)
+                    .disabled(true)
+                Spacer()
+            }
             Button("Calculate Tip") {
                 calculateTip()
             }

@@ -25,7 +25,7 @@ struct ContentView: View {
                 Spacer()
                 Text("Bill Amount:")
                 TextField("Bill Amount", value: $billAmount, formatter: currencyFormatter)
-                    .keyboardType(.numberPad)
+                    .keyboardType(.decimalPad)
                 Spacer()
             }
             HStack {

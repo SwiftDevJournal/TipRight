@@ -13,7 +13,6 @@
 		4D18AE27286A840E007A263A /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D18AE26286A840E007A263A /* Tests_macOSLaunchTests.swift */; };
 		4D18AE28286A840E007A263A /* TipRightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D18AE00286A840B007A263A /* TipRightApp.swift */; };
 		4D18AE29286A840E007A263A /* TipRightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D18AE00286A840B007A263A /* TipRightApp.swift */; };
-		4D18AE2A286A840E007A263A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D18AE01286A840B007A263A /* ContentView.swift */; };
 		4D18AE2B286A840E007A263A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D18AE01286A840B007A263A /* ContentView.swift */; };
 		4D18AE2C286A840E007A263A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D18AE02286A840D007A263A /* Assets.xcassets */; };
 		4D18AE2D286A840E007A263A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D18AE02286A840D007A263A /* Assets.xcassets */; };
@@ -98,7 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				4D18AE00286A840B007A263A /* TipRightApp.swift */,
-				4D18AE01286A840B007A263A /* ContentView.swift */,
 				4D18AE02286A840D007A263A /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -118,6 +116,7 @@
 		4D18AE0E286A840E007A263A /* macOS */ = {
 			isa = PBXGroup;
 			children = (
+				4D18AE01286A840B007A263A /* ContentView.swift */,
 				4D18AE0F286A840E007A263A /* macOS.entitlements */,
 			);
 			path = macOS;
@@ -299,7 +298,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D18AE2A286A840E007A263A /* ContentView.swift in Sources */,
 				4D18AE28286A840E007A263A /* TipRightApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

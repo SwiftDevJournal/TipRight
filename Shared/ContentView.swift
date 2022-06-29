@@ -40,6 +40,7 @@ struct ContentView: View {
             Button("Calculate Tip") {
                 calculateTip()
             }
+            .padding()
         }
         .onChange(of: billAmount) { _ in
             calculateTip()

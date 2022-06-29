@@ -16,6 +16,7 @@
 		4D18AE2B286A840E007A263A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D18AE01286A840B007A263A /* ContentView.swift */; };
 		4D18AE2C286A840E007A263A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D18AE02286A840D007A263A /* Assets.xcassets */; };
 		4D18AE2D286A840E007A263A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D18AE02286A840D007A263A /* Assets.xcassets */; };
+		4D18AE3E286CDCEA007A263A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D18AE3D286CDCEA007A263A /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		4D18AE20286A840E007A263A /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D18AE24286A840E007A263A /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		4D18AE26286A840E007A263A /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		4D18AE3D286CDCEA007A263A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 		4D18AE3C286CDCBC007A263A /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				4D18AE3D286CDCEA007A263A /* ContentView.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D18AE3E286CDCEA007A263A /* ContentView.swift in Sources */,
 				4D18AE28286A840E007A263A /* TipRightApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

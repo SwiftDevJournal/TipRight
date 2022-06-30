@@ -21,7 +21,6 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Spacer()
             HStack {
                 Spacer()
                 Text("Bill Amount:")
@@ -50,6 +49,7 @@ struct ContentView: View {
             .buttonStyle(.borderedProminent)
             .padding()
         }
+        .padding(.vertical, 20)
         .onChange(of: billAmount) { _ in
             calculateTip()
         }

@@ -39,9 +39,9 @@ struct ContentView: View {
             }
             HStack {
                 Spacer()
-                Text("Tip Amount:")
-                TextField("Tip Amount", value: $tipAmount, formatter: currencyFormatter)
-                    .disabled(true)
+                let tipAmountString = currencyFormatter.string(from: NSNumber(value: tipAmount))
+                Text("Tip Amount: ")
+                Text(tipAmountString ?? "")
                 Spacer()
             }
             Button("Calculate Tip") {
